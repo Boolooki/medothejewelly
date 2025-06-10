@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FiMenu, FiX, FiSearch, FiShoppingBag } from "react-icons/fi";
 
-const MENU_ITEMS = ["Jewely", "Ring", "Necklace", "Gift", "Wedding", "Explore"];
+const MENU_ITEMS = ["Jewelry", "Ring", "Necklace", "Gift", "Wedding", "Explore"];
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);

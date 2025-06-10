@@ -35,7 +35,7 @@ const SliderBanner: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-[500px] overflow-hidden rounded-[10vw] mt-5">
+    <div className="relative w-full h-[500px] overflow-hidden mt-5">
       {/* Image Slides */}
       <div
         className="flex transition-transform duration-500 ease-in-out"
@@ -51,7 +51,7 @@ const SliderBanner: React.FC = () => {
               priority={index === 0}
             />
             {/* Text Content */}
-            <div className="absolute flex flex-col bottom-0 right-0 bg-[white] p-4 rounded items-end">
+            <div className="absolute flex flex-col bottom-0 right-0 bg-[white] p-4 items-center">
               <h2 className="text-xl md:text-2xl font-bold">{textContent[index]}</h2>
               <a href='#' className="text-sm md:text-base hover:underline rounded mt-2 inline-block bg-black text-white px-3 py-1 text-black">
                 Shop Now

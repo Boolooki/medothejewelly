@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar";
 import SliderBanner from "./components/SliderBanner";
 import ShopifyBanner from "./components/ShopifyBanner";
 import Carousel from "./components/Carousel";
+import CategoryBanner from "./components/CategoryBanner";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <SliderBanner />
       <ShopifyBanner />
       <Carousel />
+      <CategoryBanner />
     </div>
   );
 }
