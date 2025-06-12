@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { FiMenu, FiX, FiSearch, FiShoppingBag } from "react-icons/fi";
+import { FiMenu, FiX, FiSearch, FiShoppingBag, FiUser } from "react-icons/fi";
 
 const MENU_ITEMS = ["Jewelry", "Ring", "Necklace", "Gift", "Wedding", "Explore"];
 
@@ -44,7 +44,7 @@ export default function NavBar() {
             ))}
           </div>
 
-          {/* Right: Searchbox & Shopping Bag */}
+          {/* Right: Searchbox, Shopping Bag & Account */}
           <div className="flex items-center flex-1 justify-end space-x-4">
             {/* Searchbox */}
             <div className="hidden lg:flex items-center border border-gray-300 rounded px-2 py-1">
@@ -58,6 +58,10 @@ export default function NavBar() {
             {/* Shopping Bag Icon */}
             <button className="text-black" aria-label="Shopping Bag">
               <FiShoppingBag size={24} />
+            </button>
+            {/* Account Button */}
+            <button className="text-black" aria-label="Account">
+              <FiUser size={24} />
             </button>
           </div>
         </div>
@@ -110,6 +114,14 @@ export default function NavBar() {
             >
               <FiShoppingBag size={24} className="mr-2" />
               <span>Bag</span>
+            </button>
+            {/* Account Button (mobile) */}
+            <button
+              className="text-black mt-4 flex items-center"
+              aria-label="Account"
+            >
+              <FiUser size={24} className="mr-2" />
+              <span>Account</span>
             </button>
           </div>
           {/* Click outside to close */}
