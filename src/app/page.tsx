@@ -3,6 +3,7 @@ import SliderBanner from "./components/SliderBanner";
 import ShopifyBanner from "./components/ShopifyBanner";
 import Carousel from "./components/Carousel";
 import CategoryBanner from "./components/CategoryBanner";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ShopifyBanner />
       <Carousel />
       <CategoryBanner />
+      <Footer />
     </div>
   );
 }
